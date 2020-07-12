@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+	<title>dubooWeb</title>
+	<!-- 인터넷 익스플로러에서 자바스크립트 관련 차단된 컨텐츠 허용 뜨는것 방지-->
+	<!-- saved from url=(0013)about:internet -->
+
+	<!-- icon -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Heebo|Noto+Sans+KR" rel="stylesheet">
+
+	<!-- user style -->
+	<link rel="stylesheet" href="dubooWeb.css">
+
+</head>
+<body>
+
+	<header class="header-area navbar-fade" id="header">
+		<nav class="navbar">
+			<a class="navbar-brand" id="navbarBrand">DuBoo</a>
+			<a class="navbar-toggler" id="toggleBtn"><i class="fa fa-bars"></i></a>
+			<div class="navbar-menu" id="menu">
+				<div class="nav-item"><a class="nav-link" id="navbarAbout">about</a></div>
+				<div class="nav-item"><a class="nav-link" id="navbarPortfolio">photo</a></div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="section-container">
+		<div class="welcome-area">
+			<div class="container">
+				<div class="image-slide fade">
+					<img src="img/KakaoTalk_20190904_141316231.jpg">
+					<div class="numbertext"></div>
+				</div>
+				<div class="image-slide fade">
+					<img src="img/KakaoTalk_20190904_141310266_01.jpg">
+					<div class="numbertext"></div>
+				</div>
+				<div class="image-slide fade">
+					<img src="img/KakaoTalk_20190904_141310266_02.jpg">
+					<div class="numbertext"></div>
+				</div>
+				<div class="image-slide fade">
+					<img src="img/KakaoTalk_20190904_141310266_03.jpg">
+					<div class="numbertext"></div>
+				</div>
+
+				<a class="image-prev" id="imagePrev">&#10094;</a>
+				<a class="image-next" id="imageNext">&#10095;</a>
+
+				<div class="dots">
+					<span class="dot" id="firstDot"></span>
+					<span class="dot" id="secondDot"></span>
+					<span class="dot" id="thirdDot"></span>
+					<span class="dot" id="forthDot"></span>
+				</div>
+			</div>
+		</div>
+
+		<section class="about-area" id="about">
+			<div class="title">
+				ABOUT
+			</div>
+			<div class="picture">
+				<img src="img/KakaoTalk_20190907_032245045.jpg">
+				<div class="name">KIM YUL HEE</div>
+				<div class="description">Student</div>
+			</div>
+			<div class="text">
+				<div class="intro">
+					안녕하세요. 2017년 8월부터 두부를 키우게 된 22살 김율희입니다.
+				</div>
+				<ul>
+					<li>
+						<div class="info">
+							<i class="far fa-calendar-alt"></i> 13th April, 1998
+						</div>
+					</li>
+					</li>
+					<li>
+						<div class="info">
+							<i class="fa fa-phone"></i> +82 10-9399-0532
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<i class="fa fa-envelope"></i> dbfgml980413@gmail.com
+						</div>
+					</li>
+					<li>
+						<div class="info">
+							<i class="fa fa-home"></i> Daejeon, Republic of Korea
+						</div>
+					</li>
+				</ul>
+				<div class="sns">
+					<a>
+						<i class="fab fa-facebook-f"></i>
+					</a>
+					<a>
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a>
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+					<a>
+						<i class="fab fa-google-plus-g"></i>
+					</a>
+					<a>
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+        <div class="picture2">
+          <img src="img/KakaoTalk_20190904_141310266_03.jpg">
+          <div class="name2">KIM DU BOO</div>
+          <div class="description2">Pet</div>
+        </div>
+        <div class="text">
+          <div class="intro">
+            - 수컷 <p>
+            - 2살  <p>
+            - 포메라니안 + 스피츠 = 폼피츠  <p>
+          </div>
+          <ul>
+            <li>
+              <div class="info">
+                <i class="far fa-calendar-alt"></i> 15th April, 2017
+              </div>
+            </li>
+            </li>
+            <li>
+              <div class="info">
+                <i class="fa fa-home"></i> Daejeon, Republic of Korea
+              </div>
+            </li>
+          </ul>
+		</section>
+	</div>
+
+
+
+
+
+	<section class="portfolio-area" id="portfolio">
+		<div class="title">
+			PHOTO
+		</div>
+		<div class="filter">
+			<ul class="list">
+				<li class="listItem active" id="all">
+					All
+				</li>
+				<li class="listItem" id="uiux">
+					One
+				</li>
+				<li class="listItem" id="java">
+					Two
+				</li>
+				<li class="listItem" id="db">
+					Three
+				</li>
+			</ul>
+		</div>
+		<div class="container">
+			<div class="filterItem db">
+				<div class="image">
+					<div class="overlay"><i class="far fa-image"></i></div>
+					<img src="img/KakaoTalk_20190907_040935389_01.jpg">
+				</div>
+				<div class="main">
+					처음 온 날
+				</div>
+				<div class="sub">
+					손바닥만한 두부
+				</div>
+				<div class="text">
+				손바닥만한 두부
+				</div>
+			</div>
+			<div class="filterItem java">
+				<div class="image">
+					<div class="overlay"><i class="far fa-image"></i></div>
+					<img src="img/KakaoTalk_20190907_040935389_03.jpg">
+				</div>
+				<div class="main">
+				처음 놀러간 날
+				</div>
+				<div class="sub">
+					계곡에서
+				</div>
+				<div class="text">
+					계곡에서
+				</div>
+			</div>
+			<div class="filterItem uiux java">
+				<div class="image">
+					<div class="overlay"><i class="far fa-image"></i></div>
+					<img src="img/KakaoTalk_20190907_040935389_04.jpg">
+				</div>
+				<div class="main">
+				처음 함께 사진찍은 날
+				</div>
+				<div class="sub">
+				 계곡에서
+				</div>
+				<div class="text">
+					계곡에서
+				</div>
+			</div>
+			<div class="filterItem uiux">
+				<div class="image">
+					<div class="overlay"><i class="far fa-image"></i></div>
+					<img src="img/KakaoTalk_20190907_040935389_02.jpg">
+				</div>
+				<div class="main">
+					처음 미용한날
+				</div>
+				<div class="sub">
+					잠자는 두부
+				</div>
+				<div class="text">
+					조끼패딩 입고 잠자는 두부
+				</div>
+			</div>
+			<div class="filterItem java">
+				<div class="image">
+					<div class="overlay"><i class="far fa-image"></i></div>
+					<img src="img/KakaoTalk_20190905_150938095_01.jpg">
+				</div>
+				<div class="main">
+					아련한 두부
+				</div>
+				<div class="sub">
+					아련하다
+				</div>
+				<div class="text">
+					포트 폴리오 상세 설명
+				</div>
+			</div>
+			<div class="filterItem db">
+				<div class="image">
+					<div class="overlay"><i class="far fa-image"></i></div>
+					<img src="img/KakaoTalk_20190905_150938095_03.jpg">
+				</div>
+				<div class="main">
+					캐리어에 들어간 두부
+				</div>
+				<div class="sub">
+					쏘옥 들어감
+				</div>
+				<div class="text">
+					포트 폴리오 상세 설명
+				</div>
+			</div>
+			<div class="filterItem uiux">
+				<div class="image">
+					<div class="overlay"><i class="far fa-image"></i></div>
+					<img src="img/KakaoTalk_20190904_141310266_02.jpg">
+				</div>
+				<div class="main">
+					거만한 두부
+				</div>
+				<div class="sub">
+					거만하다
+				</div>
+				<div class="text">
+					포트 폴리오 상세 설명
+				</div>
+			</div>
+			<div class="filterItem db">
+				<div class="image">
+					<div class="overlay"><i class="far fa-image"></i></div>
+					<img src="img/KakaoTalk_20190907_032101769_02.jpg">
+				</div>
+				<div class="main">
+					애교부리는 두부
+				</div>
+				<div class="sub">
+					애교쟁이
+				</div>
+				<div class="text">
+					포트 폴리오 상세 설명
+				</div>
+			</div>
+			<div class="filterItem java db">
+				<div class="image">
+					<div class="overlay"><i class="far fa-image"></i></div>
+					<img src="img/KakaoTalk_20190904_141316231.jpg">
+				</div>
+				<div class="main">
+					집에서 미용한 두부
+				</div>
+				<div class="sub">
+					못생겼다
+				</div>
+				<div class="text">
+					포트 폴리오 상세 설명
+				</div>
+			</div>
+			<div class="filterItem uiux db">
+				<div class="image">
+					<div class="overlay"><i class="far fa-image"></i></div>
+					<img src="img/KakaoTalk_20190907_042125470.jpg">
+				</div>
+				<div class="main">
+					현재 두부
+				</div>
+				<div class="sub">
+					살빼야함!!!!!!
+				</div>
+				<div class="text">
+					포트 폴리오 상세 설명
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+<footer class="footer-area">
+
+	<div class="info">
+		<p>Copyright © KimYulHee. All rights reserved.</p>
+	</div>
+</footer>
+
+
+<div id="portfolioModal" class="modal">
+	<span class="close" id="modalClose">&times;</span>
+	<div class="container">
+		<img id="modalImage">
+		<div id="modalMain" class="modal-main"></div>
+		<div id="modalSub" class="modal-sub"></div>
+		<div id="modalText" class="modal-text"></div>
+	</div>
+</div>
+
+	<script src="dubooWeb.js"></script>
+</body>
+</html>
