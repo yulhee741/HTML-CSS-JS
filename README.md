@@ -1,2 +1,3 @@
-# study
-3학년 여름방학 공부
+# my pet portfolio website
+my pet name is duboo
+creating duboo portfolio website
